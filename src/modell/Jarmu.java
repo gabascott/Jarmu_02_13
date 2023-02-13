@@ -6,9 +6,9 @@ public abstract class Jarmu {
     private boolean beinditva, uzemanyag, megerkezett;
 
     public Jarmu() {
-        setBeinditva(false);
-        setUzemanyag(true);
-        setMegerkezett(false);
+        beinditva = false;
+        uzemanyag = true;
+        megerkezett = false;
     }
 
     public void setBeinditva(boolean beinditva) {
@@ -33,6 +33,7 @@ public abstract class Jarmu {
     
     public boolean tankol(){
         if (beinditva == false) {
+            setUzemanyag(true);
             return true;
         }else{
             return false;

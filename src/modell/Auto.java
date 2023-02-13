@@ -6,6 +6,7 @@ public class Auto extends Jarmu{
     private boolean defekt;
 
     public Auto(){
+        super();
         defekt = false;
     };
 
@@ -13,9 +14,12 @@ public class Auto extends Jarmu{
         this.defekt = defekt;
     }
     
-    public void kereketCserel(){
+    public boolean kereketCserel(){
         if (defekt == true) {
             setDefekt(false);
+            return true;
+        }else{
+            return false;
         }
     };
 
@@ -27,7 +31,7 @@ public class Auto extends Jarmu{
             setDefekt(true);
             return false;
         }else{
-            return true;
+            return super.halad();
         }
     }
     
