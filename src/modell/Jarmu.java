@@ -1,5 +1,5 @@
 
-package jarmuprg;
+package modell;
 
 public abstract class Jarmu {
 
@@ -9,7 +9,11 @@ public abstract class Jarmu {
     
     public void leallit(){};
     
-    public void tankol(){};
+    public boolean tankol(){
+        return true;
+    };
     
-    public abstract boolean halad();;
+    public boolean halad(){
+        return true;
+    };;
 }

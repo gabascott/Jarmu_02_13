@@ -1,4 +1,4 @@
-package jarmuprg;
+package modell;
 
 public class Auto extends Jarmu{
     private boolean defekt;
